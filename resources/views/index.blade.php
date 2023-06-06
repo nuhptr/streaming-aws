@@ -40,7 +40,7 @@
                 <!-- Logo & Toggler Button here -->
                 <div class="flex items-center justify-between lg:hidden">
                     <!-- LOGO -->
-                    <a href="/index.html">
+                    <a href="{{ route('index') }}">
                         <img src="{{ asset('stream/assets/images/stream.svg') }}" alt="stream" />
                     </a>
                     <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
@@ -63,11 +63,11 @@
                             <a href="#!" class="nav-link-item">Featured</a>
                             <a href="pricing.html" class="nav-link-item">Pricing</a>
                         </div>
-                        <a href="/" class="hidden lg:block -ml-36">
+                        <a href="{{ route('index') }}" class="hidden lg:block -ml-36">
                             <img src="{{ asset('stream/assets/images/stream.svg') }}" alt="stream" />
                         </a>
                         <div class="flex flex-col w-full font-normal lg:w-auto lg:gap-12 lg:items-center lg:flex-row">
-                            <a href="{{ route('member.auth') }}"
+                            <a href="{{ route('member.login') }}"
                                 class="px-8 py-3 mt-3 text-center outline outline-2 outline-stream-gray rounded-3xl lg:mt-0">
                                 <span class="text-base text-normal text-stream-gray">Sign In</span>
                             </a>
