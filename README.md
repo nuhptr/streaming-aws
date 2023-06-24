@@ -5,6 +5,13 @@
 3. Run the app
 4. Enjoy!
 
+## Add Laravel Valet
+
+1. Install valet
+   `composer global require laravel/valet`
+2. valet install
+3. valet park / valet link
+
 ## Some Stuff in this App
 
 1. Migration
@@ -22,7 +29,7 @@
 -   Rollback all migration
     `php artisan migrate:reset`
 
-1. Seeder
+2. Seeder
 
 -   Create seeder
     `php artisan make:seeder UsersTableSeeder`
@@ -33,7 +40,7 @@
 -   Run specific seeder
     `php artisan db:seed --class=UsersTableSeeder`
 
-1. Model
+3. Model
 
 -   Create model: `php artisan make:model User`
 
@@ -50,12 +57,12 @@
 -   Create controller with model and resource and api
     `php artisan make:controller UserController --model=User --resource --api`
 
-1. Storage
+5. Storage
 
 -   Link storage
     `php artisan storage:link`
 
-1. Middleware
+6. Middleware
 
 -   Create middleware
     `php artisan make:middleware nameMiddleware`
