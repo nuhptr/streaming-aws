@@ -109,7 +109,7 @@ class MovieController extends Controller
             //? save new image
             $largeThumbnail = $request->large_thumbnail;
             $originalLargeThumbnail = Str::random(10) . $largeThumbnail->getClientOriginalName();
-            $smallThumbnail->storeAs('public/thumbnail', $originalLargeThumbnail);
+            $largeThumbnail->storeAs('public/thumbnail', $originalLargeThumbnail);
             $data['large_thumbnail'] = $originalLargeThumbnail;
 
             //? delete old image
